@@ -15,8 +15,13 @@ import {createTheme, ThemeProvider} from "@mui/material/styles";
 export const Navbar = () => {
 
 	return (
-		<Box sx={{display: "flex"}}>
-			<CssBaseline />
+		<Box
+			sx={{
+				bgcolor: "##0034aa",
+				display: "flex",
+				// opacity: [255, 255, 255, 0.7],
+			}}
+		>
 			<AppBar component='nav' position='fixed'>
 				<Stack
 					direction='row'
