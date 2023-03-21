@@ -15,10 +15,10 @@ const darkTheme = createTheme({
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
 		<BrowserRouter>
-			<ThemeProvider theme={darkTheme}>
+			{/* <ThemeProvider theme={darkTheme}> */}
                 {/* <CssBaseline /> */}
 				<App />
-			</ThemeProvider>
+			{/* </ThemeProvider> */}
 		</BrowserRouter>
 	</React.StrictMode>
 );
