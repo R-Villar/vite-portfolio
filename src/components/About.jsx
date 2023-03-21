@@ -6,8 +6,21 @@ import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 export const About = () => {
 	return (
-		<Stack direction='row' spacing={6} sx={{display: "flex-end"}}>
-			<Box sx={{width: "100%", maxWidth: 500}}>
+		<Box
+			// direction='grid'
+			// spacing={6}
+			sx={{
+				display: "flex",
+				// p: 2,
+				gridTemplateColumns: {
+					sm: ".5fr",
+					md: ".5fr .5fr",
+					lg: ".5fr .5fr .5fr",
+					xl: ".5fr .5fr .5fr .5fr",
+				},
+			}}
+		>
+			<Stack sx={{width: "100%", maxWidth: 500}}>
 				<p>About me</p>
 				<Typography variant='body1'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -29,16 +42,16 @@ export const About = () => {
 					Aliquam interdum egestas nunc, eget mollis metus dignissim
 					sed.
 				</Typography>
-			</Box>
-			<Box sx={{width: "100%", maxWidth: 500, display: "center"}}>
-				<Card sx={{maxWidth: 500}}>
+			</Stack>
+			<Stack sx={{width: "100%", maxWidth: 500}}>
+				<Card>
 					<CardMedia
 						component='img'
 						image='src/assets/images/Remy.jpg'
 						alt='Remy'
 					/>
 				</Card>
-			</Box>
-		</Stack>
+			</Stack>
+		</Box>
 	);
 };
