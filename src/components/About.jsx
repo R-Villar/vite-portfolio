@@ -7,11 +7,8 @@ import Stack from "@mui/material/Stack";
 export const About = () => {
 	return (
 		<Box
-			// direction='grid'
-			// spacing={6}
 			sx={{
 				display: "flex",
-				// p: 2,
 				gridTemplateColumns: {
 					sm: ".5fr",
 					md: ".5fr .5fr",
