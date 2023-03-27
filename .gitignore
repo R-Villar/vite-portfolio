@@ -25,4 +25,4 @@ dist-ssr
 package-lock.json
 
 favicon.ico
-assets
+src/assets
