@@ -572,6 +572,11 @@ video {
   margin-right: auto;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-7{
   margin-bottom: 1.75rem;
 }
@@ -640,6 +645,10 @@ video {
   max-width: 400px;
 }
 
+.max-w-\[40px\]{
+  max-width: 40px;
+}
+
 .basis-2\/5{
   flex-basis: 40%;
 }
@@ -690,6 +699,10 @@ video {
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-7{
+  gap: 1.75rem;
 }
 
 .rounded-full{
@@ -1022,6 +1035,10 @@ body,
 .hover\:text-red:hover{
   --tw-text-opacity: 1;
   color: rgb(220 68 146 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-50:hover{
+  opacity: 0.5;
 }
 
 .hover\:saturate-200:hover{
