@@ -704,6 +704,10 @@ video {
   height: 100%;
 }
 
+.h-64{
+  height: 16rem;
+}
+
 .max-h-\[\]{
   max-height: ;
 }
@@ -742,6 +746,14 @@ video {
 
 .w-2\/4{
   width: 50%;
+}
+
+.w-5{
+  width: 1.25rem;
+}
+
+.w-4\/6{
+  width: 66.666667%;
 }
 
 .max-w-\[400px\]{
@@ -966,6 +978,10 @@ video {
 
 .pb-48{
   padding-bottom: 12rem;
+}
+
+.pt-9{
+  padding-top: 2.25rem;
 }
 
 .text-center{
