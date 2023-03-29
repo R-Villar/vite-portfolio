@@ -82,7 +82,9 @@ export const Projects = () => {
 					>
 						BEAUTIFUL USER INTERFACES
 					</div>
-					<Project title='Project 1' />
+					<a href='#' target='_blank' rel='noreferrer'>
+						<Project title='Project 1' />
+					</a>
 					<Project title='Project 2' />
 
 					{/* ROW 2 */}
