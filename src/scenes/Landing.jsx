@@ -1,4 +1,4 @@
-import { SocialMediaIcons} from "../components/SocialMediaIcons"
+import {SocialMediaIcons} from "../components/SocialMediaIcons";
 import {useMediaQuery} from "../hooks/useMediaQuery";
 import {motion} from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -21,17 +21,17 @@ export const Landing = ({setSelectedPage}) => {
 					>
 						<img
 							alt='profile'
-							className='hover:filter hover:saturate-200 transition duration-500 z-10 w-full
+							className='transition duration-300 ease-in-out hover:scale-105 z-10 w-full 
                                 max-w-[400px] md:max-w-[600px]'
-							src='assets/profile-image.png'
+							src='assets/Remy.png'
 						/>
 					</div>
 				) : (
 					<img
 						alt='profile'
-						className='hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-                                max-w-[400px] md:max-w-[600px]'
-						src='assets/profile-image.png'
+						className='transition duration-300 ease-in-out hover:scale-105 z-10 w-full
+                            max-w-[400px] md:max-w-[600px]'
+						src='assets/Remy.png'
 					/>
 				)}
 			</div>
@@ -86,18 +86,21 @@ export const Landing = ({setSelectedPage}) => {
 					>
 						Contact Me
 					</AnchorLink>
-					<AnchorLink
+					<a
 						className='rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5'
-						onClick={() => setSelectedPage("contact")}
-						href='#'
+						// onClick={() => setSelectedPage("contact")}
+						href='./assets/Remberto_Villar_Resume.pdf'
+						target='_blank'
+						rel='noreferrer'
+						// type='application/pdf'
 					>
 						<div
 							className='bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center
                                 justify-center font-playfair px-10'
 						>
-							Resume
+						Resume
 						</div>
-					</AnchorLink>
+					</a>
 				</motion.div>
 
 				<motion.div
