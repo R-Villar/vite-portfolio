@@ -92,7 +92,7 @@ export const MySkills = () => {
 					initial='hidden'
 					whileInView='visible'
 					viewport={{once: false, amount: 0.5}}
-					transition={{DELAY: 0.2, duration: 0.5}}
+					transition={{delay: 0.2, duration: 0.5}}
 					variants={{
 						hidden: {opacity: 0, y: 50},
 						visible: {opacity: 1, y: 0},
@@ -114,8 +114,7 @@ export const MySkills = () => {
 						Sed fermentum orci ut tellus varius, id eleifend mi
 						blandit. Suspendisse ut mi nec erat vehicula vulputate
 						ac quis ligula. Curabitur leo augue, ultricies nec
-						tortor quis, finibus dapibus risus. Aenean erat quam,
-						ultricies non maximus non, porttitor a lacus
+						tortor quis, finibus dapibus risus. Aenean erat quam
 					</p>
 				</motion.div>
 
@@ -125,7 +124,7 @@ export const MySkills = () => {
 					initial='hidden'
 					whileInView='visible'
 					viewport={{once: false, amount: 0.5}}
-					transition={{DELAY: 0.4, duration: 0.5}}
+					transition={{delay: 0.4, duration: 0.5}}
 					variants={{
 						hidden: {opacity: 0, y: 50},
 						visible: {opacity: 1, y: 0},
