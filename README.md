@@ -3,7 +3,7 @@
 ### Run the application with
 
 `npm install`
-then
+then to run app
 `npm run dev`
 
 ### start tailwind
