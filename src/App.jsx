@@ -1,13 +1,13 @@
-import {useEffect, useState} from "react";
-import {useMediaQuery} from "./hooks/useMediaQuery";
-import {Navbar} from "./scenes/Navbar";
-import {DotGroup} from "./scenes/DotGroup";
-import {Landing} from "./scenes/Landing";
-import {LineGradient} from "./components/LineGradient";
-import {MySkills} from "./scenes/MySkills";
-import {Projects} from "./scenes/Projects"
-import {Contact} from "./scenes/Contact"
-import {Footer} from "./scenes/Footer"
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "./hooks/useMediaQuery";
+import { Navbar } from "./scenes/Navbar";
+import { DotGroup } from "./scenes/DotGroup";
+import { Landing } from "./scenes/Landing";
+import { LineGradient } from "./components/LineGradient";
+import { MySkills } from "./scenes/MySkills";
+import { Projects } from "./scenes/Projects";
+import { Contact } from "./scenes/Contact";
+import { Footer } from "./scenes/Footer";
 function App() {
 	const [selectedPage, setSelectedPage] = useState("home");
 	const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -24,17 +24,10 @@ function App() {
 
 	return (
 		<div className='app bg-deep-blue'>
-			<Navbar
-				isTopOfPage={isTopOfPage}
-				selectedPage={selectedPage}
-				setSelectedPage={setSelectedPage}
-			/>
+			<Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 			<div className='w-5/6 mx-auto md:h-full'>
 				{isAboveMediumScreens && (
-					<DotGroup
-						selectedPage={selectedPage}
-						setSelectedPage={setSelectedPage}
-					/>
+					<DotGroup selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
 				)}
 				<Landing setSelectedPage={setSelectedPage} />
 			</div>
@@ -50,7 +43,7 @@ function App() {
 			<div className='w-5/6 mx-auto md:h-full'>
 				<Contact />
 			</div>
-            <Footer />
+			<Footer />
 		</div>
 	);
 }

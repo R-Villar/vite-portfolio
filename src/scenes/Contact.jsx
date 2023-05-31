@@ -1,12 +1,12 @@
-import {LineGradient} from "../components/LineGradient";
-import {useForm} from "react-hook-form";
-import {motion} from "framer-motion";
+import { LineGradient } from "../components/LineGradient";
+import { useForm } from "react-hook-form";
+import { motion } from "framer-motion";
 
 export const Contact = () => {
 	const {
 		register,
 		trigger,
-		formState: {errors},
+		formState: { errors },
 	} = useForm();
 
 	const onSubmit = async (e) => {
@@ -20,23 +20,22 @@ export const Contact = () => {
 		<section id='contact' className='py-48'>
 			{/* HEADINGS */}
 			<motion.div
-            className="flex justify-end w-full"
+				className='flex justify-end w-full'
 				initial='hidden'
 				whileInView='visible'
-				viewport={{once: false, amount: 0.5}}
-				transition={{duration: 0.5}}
+				viewport={{ once: false, amount: 0.5 }}
+				transition={{ duration: 0.5 }}
 				variants={{
-					hidden: {opacity: 0, x: -50},
-					visible: {opacity: 1, x: 0},
+					hidden: { opacity: 0, x: -50 },
+					visible: { opacity: 1, x: 0 },
 				}}
 			>
 				<div>
 					<p className='font-playfair font-semibold text-4xl'>
-						<span className='text-yellow'>CONTACT ME</span> TO GET
-						STARTED
+						<span className='text-yellow'>CONTACT ME</span> TO GET STARTED
 					</p>
 					<div className='flex md:justify-end my-5'>
-						<LineGradient width="w-1/2" />
+						<LineGradient width='w-1/2' />
 					</div>
 				</div>
 			</motion.div>
@@ -46,11 +45,11 @@ export const Contact = () => {
 					className='basis-1/2 flex justify-center'
 					initial='hidden'
 					whileInView='visible'
-					viewport={{once: false, amount: 0.5}}
-					transition={{duration: 0.5}}
+					viewport={{ once: false, amount: 0.5 }}
+					transition={{ duration: 0.5 }}
 					variants={{
-						hidden: {opacity: 0, y: 50},
-						visible: {opacity: 1, y: 0},
+						hidden: { opacity: 0, y: 50 },
+						visible: { opacity: 1, y: 0 },
 					}}
 				>
 					<img src='../assets/contact-image.jpeg' alt='contact' />
@@ -60,11 +59,11 @@ export const Contact = () => {
 					className='basis-1/2 mt-10 md:mt-0'
 					initial='hidden'
 					whileInView='visible'
-					viewport={{once: false, amount: 0.5}}
-					transition={{delay: 0.2, duration: 0.5}}
+					viewport={{ once: false, amount: 0.5 }}
+					transition={{ delay: 0.2, duration: 0.5 }}
 					variants={{
-						hidden: {opacity: 0, y: 50},
-						visible: {opacity: 1, y: 0},
+						hidden: { opacity: 0, y: 50 },
+						visible: { opacity: 1, y: 0 },
 					}}
 				>
 					<form
@@ -84,10 +83,8 @@ export const Contact = () => {
 						/>
 						{errors.name && (
 							<p className='text-red mt-1'>
-								{errors.name.type === "required" &&
-									"This field is required."}
-								{errors.name.type === "maxLength" &&
-									"Max length is 100 char."}
+								{errors.name.type === "required" && "This field is required."}
+								{errors.name.type === "maxLength" && "Max length is 100 char."}
 							</p>
 						)}
 						<input
@@ -96,16 +93,13 @@ export const Contact = () => {
 							placeholder='EMAIL'
 							{...register("email", {
 								required: true,
-								pattern:
-									/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+								pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
 							})}
 						/>
 						{errors.email && (
 							<p className='text-red mt-1'>
-								{errors.email.type === "required" &&
-									"This field is required."}
-								{errors.email.type === "pattern" &&
-									"Invalid email address."}
+								{errors.email.type === "required" && "This field is required."}
+								{errors.email.type === "pattern" && "Invalid email address."}
 							</p>
 						)}
 
@@ -122,10 +116,8 @@ export const Contact = () => {
 						/>
 						{errors.message && (
 							<p className='text-red mt-1'>
-								{errors.message.type === "required" &&
-									"This field is required."}
-								{errors.message.type === "maxLength" &&
-									"Max length is 2000 char."}
+								{errors.message.type === "required" && "This field is required."}
+								{errors.message.type === "maxLength" && "Max length is 2000 char."}
 							</p>
 						)}
 						<button
