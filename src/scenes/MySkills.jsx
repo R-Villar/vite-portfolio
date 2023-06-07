@@ -41,7 +41,7 @@ export const MySkills = () => {
 							</li>
 							<li className='flex mt-1'>
 								<SiRubyonrails title='Ruby on Rails' size='2em' /> &nbsp;{" "}
-								<p className='text-red font-bold'>Ruby on Rails</p>
+								<p className='text-red font-bold'>Rails</p>
 							</li>
 							<li className='flex mt-1'>
 								<FaHtml5 title='HTML5' size='2em' /> &nbsp;{" "}
