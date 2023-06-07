@@ -28,50 +28,64 @@ export const MySkills = () => {
 					<div className='flex flex-wrap'>
 						<ul className='mt-5 mb-7 w-full'>
 							<li className='flex mt-1'>
-								<FaPython size='2em' /> &nbsp; Python
+								<FaPython title='Python' size='2em' /> &nbsp;{" "}
+								<p className='text-red font-bold'>Python</p>
 							</li>
 							<li className='flex mt-1'>
-								<SiJavascript size='1.8em' /> &nbsp; JavaScript
+								<SiJavascript title='JavaScript' size='1.8em' /> &nbsp;{" "}
+								<p className='text-red font-bold'>JavaScript</p>
 							</li>
 							<li className='flex mt-1'>
-								<SiRuby size='2em' /> &nbsp; Ruby
+								<SiRuby title='Ruby' size='2em' /> &nbsp;{" "}
+								<p className='text-red font-bold'>Ruby</p>
 							</li>
 							<li className='flex mt-1'>
-								<SiRubyonrails size='2em' /> &nbsp; Rails
+								<SiRubyonrails title='Ruby on Rails' size='2em' /> &nbsp;{" "}
+								<p className='text-red font-bold'>Ruby on Rails</p>
 							</li>
 							<li className='flex mt-1'>
-								<FaHtml5 size='2em' /> &nbsp; HTML5
+								<FaHtml5 title='HTML5' size='2em' /> &nbsp;{" "}
+								<p className='text-red font-bold'>HTML</p>
 							</li>
 							<li className='flex mt-1'>
-								<FaNode size='2em' /> &nbsp; Node JS
+								<FaNode title='Node' size='2em' /> &nbsp;{" "}
+								<p className='text-red font-bold'>Node.js</p>
 							</li>
 							<li className='flex mt-1'>
-								<SiFlask size='2em' /> &nbsp; Flask
+								<SiFlask title='Flask' size='2em' /> &nbsp;{" "}
+								<p className='text-red font-bold'>Flask</p>
 							</li>
 						</ul>
 
 						<ul className='mt-5 mb-7 w-full'>
 							<li className='flex mt-1'>
-								<SiMysql size='2em' /> &nbsp; MySQL
+								<SiMysql title='MySQL' size='2em' /> &nbsp;{" "}
+								<p className='text-red font-bold'>MySQL</p>
 							</li>
 							<li className='flex mt-1'>
-								<SiMongodb size='2em' /> &nbsp; MongoDB
+								<SiMongodb title='MongoDB' size='2em' /> &nbsp;{" "}
+								<p className='text-red font-bold'>MongoDB</p>
 							</li>
 
 							<li className='flex mt-1'>
-								<FaGit size='2em' /> &nbsp; Git
+								<FaGit title='Git' size='2em' /> &nbsp;{" "}
+								<p className='text-red font-bold'>Git</p>
 							</li>
 							<li className='flex mt-1'>
-								<FaReact size='2em' /> &nbsp; React
+								<FaReact title='React' size='2em' /> &nbsp;{" "}
+								<p className='text-red font-bold'>React</p>
 							</li>
 							<li className='flex mt-1'>
-								<FaCss3Alt size='2em' /> &nbsp; CSS
+								<FaCss3Alt title='CSS' size='2em' /> &nbsp;{" "}
+								<p className='text-red font-bold'>CSS</p>
 							</li>
 							<li className='flex mt-1'>
-								<FaBootstrap size='2em' /> &nbsp; Bootstrap
+								<FaBootstrap title='Bootstrap' size='2em' /> &nbsp;{" "}
+								<p className='text-red font-bold'>Bootstrap</p>
 							</li>
 							<li className='flex mt-1'>
-								<SiMui size='2em' /> &nbsp; Material UI
+								<SiMui title='Material ui' size='2em' /> &nbsp;{" "}
+								<p className='text-red font-bold'>Material UI</p>
 							</li>
 						</ul>
 					</div>
