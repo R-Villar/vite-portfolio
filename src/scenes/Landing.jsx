@@ -85,11 +85,9 @@ export const Landing = ({ setSelectedPage }) => {
 					</AnchorLink>
 					<a
 						className='rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5'
-						// onClick={() => setSelectedPage("contact")}
 						href='./assets/Remberto_Villar_Resume.pdf'
 						target='_blank'
 						rel='noreferrer'
-						// type='application/pdf'
 					>
 						<div
 							className='bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center
