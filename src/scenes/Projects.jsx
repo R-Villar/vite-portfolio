@@ -1,44 +1,11 @@
-import { LineGradient } from "../components/LineGradient";
-import { motion } from "framer-motion";
-
-const container = {
-	hidden: {},
-	visible: {
-		transition: {
-			staggerChildren: 0.2,
-		},
-	},
-};
-
-const projectVariant = {
-	hidden: { opacity: 0, scale: 0.8 },
-	visible: { opacity: 1, scale: 1 },
-};
-
-// add a subtitle argument to the project function to have individual text for each project
-const Project = ({ title }) => {
-	const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-        bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-	const projectTitle = title.split(" ").join("-").toLowerCase();
-
-	return (
-		<motion.div variants={projectVariant} className='relative'>
-			<div className={overlayStyles}>
-				<p className='text-2xl font-playfair'>{title}</p>
-				{/* add the subtitle to the <p> below*/}
-				<p className='mt-7'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem non mauris auctor
-					auctor. Nullam felis elit,
-				</p>
-			</div>
-			<img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
-		</motion.div>
-	);
-};
+import { LineGradient } from "../components/LineGradient"
+import { motion } from "framer-motion"
+import { BiLinkExternal } from "react-icons/bi"
+import { FaGithub } from "react-icons/fa"
 
 export const Projects = () => {
 	return (
-		<section id='projects' className='pt-48 pb-48'>
+		<section id='projects' className='py-44'>
 			{/* HEADINGS */}
 			<motion.div
 				className='md:w-2/5 mx-auto text-center'
@@ -67,43 +34,74 @@ export const Projects = () => {
 			</motion.div>
 
 			{/* PROJECTS */}
-			<div className='flex justify-center'>
-				<motion.div
-					className='sm:grid sm:grid-cols-3'
-					initial='hidden'
-					whileInView='visible'
-					viewport={{ once: false, amount: 0.2 }}
-					variants={container}
-				>
-					{/* ROW 1 */}
-					<div
-						className='flex justify-center text-center items-center p-10 bg-red 
-                            max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold'
-					>
-						BEAUTIFUL USER INTERFACES
+			<div>
+				{/* ROW 1 */}
+				<div class='max-w-md mx-auto bg-project-card rounded-lg overflow-hidden md:max-w-2xl mb-8'>
+					<div class='md:flex'>
+						<div class='md:shrink-0'>
+							<img
+								class='h-48 w-full object-cover md:h-full md:w-48'
+								src='../assets/evon-gym.webp'
+								alt='Project-1'
+							/>
+						</div>
+						<div class='p-8'>
+							<div class='uppercase tracking-wide text-sm text-indigo-500 font-semibold'>
+								Gym app
+							</div>
+							<a
+								href='#'
+								class='block mt-1 text-lg leading-tight font-medium text-black hover:underline'
+							>
+								Incredible accommodation for your team
+							</a>
+							<p class='mt-2 text-slate-500'>
+								Looking to take your team away on a retreat to enjoy awesome food and take in
+								some sunshine? We have a list of places to do just that.
+							</p>
+							<div className='flex flex-row gap-x-2.5 py-2'>
+								<a
+									href='https://github.com/R-Villar/fitness-app'
+									target='_blank'
+									rel='noreferrer'
+								>
+									<FaGithub title='go to site' size='1.5rem' color='black' />
+								</a>
+								<a>
+									<BiLinkExternal title='go to site' size='1.5rem' color='black' />
+								</a>
+							</div>
+						</div>
 					</div>
-					<a href='#' target='_blank' rel='noreferrer'>
-						<Project title='Project 1' />
-					</a>
-					<Project title='Project 2' />
+				</div>
 
-					{/* ROW 2 */}
-					<Project title='Project 3' />
-					<Project title='Project 4' />
-					<Project title='Project 5' />
-
-					{/* ROW 3 */}
-					<Project title='Project 6' />
-					<Project title='Project 7' />
-
-					<div
-						className='flex justify-center text-center items-center p-10 bg-blue 
-                            max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold'
-					>
-						SMOOTH USER EXPERIENCE
+				<div class='max-w-md mx-auto bg-project-card rounded-lg shadow-md overflow-hidden md:max-w-2xl'>
+					<div class='md:flex'>
+						<div class='md:shrink-0'>
+							<img
+								class='h-48 w-full object-cover md:h-full md:w-48'
+								src='../assets/project-1.jpeg'
+								alt='Modern building architecture'
+							/>
+						</div>
+						<div class='p-8'>
+							<div class='uppercase tracking-wide text-sm text-indigo-500 font-semibold'>
+								Company retreats
+							</div>
+							<a
+								href='#'
+								class='block mt-1 text-lg leading-tight font-medium text-black hover:underline'
+							>
+								Incredible accommodation for your team
+							</a>
+							<p class='mt-2 text-slate-500'>
+								Looking to take your team away on a retreat to enjoy awesome food and take in
+								some sunshine? We have a list of places to do just that.
+							</p>
+						</div>
 					</div>
-				</motion.div>
+				</div>
 			</div>
 		</section>
-	);
-};
+	)
+}
