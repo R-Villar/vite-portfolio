@@ -1,10 +1,10 @@
-import { LineGradient } from "../components/LineGradient";
-import { useMediaQuery } from "../hooks/useMediaQuery";
-import { motion } from "framer-motion";
-import { FaPython, FaGit, FaHtml5, FaReact, FaCss3Alt, FaBootstrap, FaNode } from "react-icons/fa";
-import { SiJavascript, SiRubyonrails, SiRuby, SiMysql, SiMui, SiMongodb, SiFlask } from "react-icons/si";
+import { LineGradient } from "../components/LineGradient"
+import { useMediaQuery } from "../hooks/useMediaQuery"
+import { motion } from "framer-motion"
+import { FaPython, FaGit, FaHtml5, FaReact, FaCss3Alt, FaBootstrap, FaNode } from "react-icons/fa"
+import { SiJavascript, SiRubyonrails, SiRuby, SiMysql, SiMui, SiMongodb, SiFlask } from "react-icons/si"
 export const MySkills = () => {
-	const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+	const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
 
 	return (
 		<section id='skills' className='pt-10 pb-24'>
@@ -14,7 +14,7 @@ export const MySkills = () => {
 					className='md:w-1/3'
 					initial='hidden'
 					whileInView='visible'
-					viewport={{ once: false, amount: 0.5 }}
+					viewport={{ once: true, amount: 0.5 }}
 					transition={{ duration: 0.5 }}
 					variants={{
 						hidden: { opacity: 0, x: -50 },
@@ -25,7 +25,7 @@ export const MySkills = () => {
 						MY <span className='text-red'>SKILLS</span>
 					</p>
 					<LineGradient width='w-1/3' />
-					<div className='flex flex-wrap'>
+					<div className='flex flex-row'>
 						<ul className='mt-5 mb-7 w-full'>
 							<li className='flex mt-1'>
 								<FaPython title='Python' size='2em' /> &nbsp;{" "}
@@ -186,5 +186,5 @@ export const MySkills = () => {
 				</motion.div>
 			</div>
 		</section>
-	);
-};
+	)
+}
