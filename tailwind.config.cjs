@@ -12,6 +12,7 @@ module.exports = {
 				"deep-blue": "#010026",
 				"dark-grey": "#757575",
 				"opaque-black": "rgba(0,0,0,0.35)",
+				"project-card": "#c1cfec",
 			},
 			backgroundImage: (theme) => ({
 				"gradient-rainbow":
@@ -37,4 +38,4 @@ module.exports = {
 		},
 	},
 	plugins: [],
-};
+}
