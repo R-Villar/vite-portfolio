@@ -1,8 +1,8 @@
-import { SocialMediaIcons } from "../components/SocialMediaIcons";
+import { SocialMediaIcons } from "../components/SocialMediaIcons"
 
 export const Footer = () => {
 	return (
-		<footer className='h-64 bg-red pt-10    '>
+		<footer className='h-64 bg-red pt-10'>
 			<div className='w-5/6 mx-auto'>
 				<SocialMediaIcons />
 
@@ -12,5 +12,5 @@ export const Footer = () => {
 				</div>
 			</div>
 		</footer>
-	);
-};
+	)
+}
