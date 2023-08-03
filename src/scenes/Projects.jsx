@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { BiLinkExternal } from "react-icons/bi"
 import { FaGithub } from "react-icons/fa"
 
-export const Projects = () => {
+export const Projects = ({ setSelectedPage }) => {
 	return (
 		<section id='projects' className='py-44'>
 			{/* HEADINGS */}
@@ -11,6 +11,7 @@ export const Projects = () => {
 				className='md:w-2/5 mx-auto text-center'
 				initial='hidden'
 				whileInView='visible'
+				onViewportEnter={() => setSelectedPage("projects")}
 				viewport={{ once: false, amount: 0.5 }}
 				transition={{ duration: 0.5 }}
 				variants={{
@@ -36,26 +37,26 @@ export const Projects = () => {
 			{/* PROJECTS */}
 			<div>
 				{/* ROW 1 */}
-				<div class='max-w-md mx-auto bg-project-card rounded-lg overflow-hidden md:max-w-2xl mb-8'>
-					<div class='md:flex'>
-						<div class='md:shrink-0'>
+				<div className='max-w-md mx-auto bg-project-card rounded-lg overflow-hidden md:max-w-2xl mb-8'>
+					<div className='md:flex'>
+						<div className='md:shrink-0'>
 							<img
-								class='h-48 w-full object-cover md:h-full md:w-48'
+								className='h-48 w-full object-cover md:h-full md:w-48'
 								src='../assets/evon-gym.webp'
 								alt='Project-1'
 							/>
 						</div>
-						<div class='p-8'>
-							<div class='uppercase tracking-wide text-sm text-indigo-500 font-semibold'>
+						<div className='p-8'>
+							<div className='uppercase tracking-wide text-sm text-indigo-500 font-semibold'>
 								Gym app
 							</div>
 							<a
 								href='#'
-								class='block mt-1 text-lg leading-tight font-medium text-black hover:underline'
+								className='block mt-1 text-lg leading-tight font-medium text-black hover:underline'
 							>
 								Incredible accommodation for your team
 							</a>
-							<p class='mt-2 text-slate-500'>
+							<p className='mt-2 text-slate-500'>
 								Looking to take your team away on a retreat to enjoy awesome food and take in
 								some sunshine? We have a list of places to do just that.
 							</p>
@@ -75,26 +76,26 @@ export const Projects = () => {
 					</div>
 				</div>
 
-				<div class='max-w-md mx-auto bg-project-card rounded-lg shadow-md overflow-hidden md:max-w-2xl'>
-					<div class='md:flex'>
-						<div class='md:shrink-0'>
+				<div className='max-w-md mx-auto bg-project-card rounded-lg shadow-md overflow-hidden md:max-w-2xl'>
+					<div className='md:flex'>
+						<div className='md:shrink-0'>
 							<img
-								class='h-48 w-full object-cover md:h-full md:w-48'
+								className='h-48 w-full object-cover md:h-full md:w-48'
 								src='../assets/project-1.jpeg'
 								alt='Modern building architecture'
 							/>
 						</div>
-						<div class='p-8'>
-							<div class='uppercase tracking-wide text-sm text-indigo-500 font-semibold'>
+						<div className='p-8'>
+							<div className='uppercase tracking-wide text-sm text-indigo-500 font-semibold'>
 								Company retreats
 							</div>
 							<a
 								href='#'
-								class='block mt-1 text-lg leading-tight font-medium text-black hover:underline'
+								className='block mt-1 text-lg leading-tight font-medium text-black hover:underline'
 							>
 								Incredible accommodation for your team
 							</a>
-							<p class='mt-2 text-slate-500'>
+							<p className='mt-2 text-slate-500'>
 								Looking to take your team away on a retreat to enjoy awesome food and take in
 								some sunshine? We have a list of places to do just that.
 							</p>

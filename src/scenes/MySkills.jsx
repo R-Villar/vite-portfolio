@@ -3,7 +3,8 @@ import { useMediaQuery } from "../hooks/useMediaQuery"
 import { motion } from "framer-motion"
 import { FaPython, FaGit, FaHtml5, FaReact, FaCss3Alt, FaBootstrap, FaNode } from "react-icons/fa"
 import { SiJavascript, SiRubyonrails, SiRuby, SiMysql, SiMui, SiMongodb, SiFlask } from "react-icons/si"
-export const MySkills = () => {
+
+export const MySkills = ({setSelectedPage}) => {
 	const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
 
 	return (
@@ -14,6 +15,7 @@ export const MySkills = () => {
 					className='md:w-1/3'
 					initial='hidden'
 					whileInView='visible'
+					onViewportEnter={() => setSelectedPage("skills")}
 					viewport={{ once: true, amount: 0.5 }}
 					transition={{ duration: 0.5 }}
 					variants={{
