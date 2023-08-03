@@ -1,20 +1,20 @@
-import { LineGradient } from "../components/LineGradient";
-import { useForm } from "react-hook-form";
-import { motion } from "framer-motion";
+import { LineGradient } from "../components/LineGradient"
+import { useForm } from "react-hook-form"
+import { motion } from "framer-motion"
 
 export const Contact = () => {
 	const {
 		register,
 		trigger,
 		formState: { errors },
-	} = useForm();
+	} = useForm()
 
 	const onSubmit = async (e) => {
-		const isValid = await trigger();
+		const isValid = await trigger()
 		if (!isValid) {
-			e.preventDefault();
+			e.preventDefault()
 		}
-	};
+	}
 
 	return (
 		<section id='contact' className='py-48'>
@@ -23,7 +23,7 @@ export const Contact = () => {
 				className='flex justify-end w-full'
 				initial='hidden'
 				whileInView='visible'
-				viewport={{ once: false, amount: 0.5 }}
+				viewport={{ once: true, amount: 0.5 }}
 				transition={{ duration: 0.5 }}
 				variants={{
 					hidden: { opacity: 0, x: -50 },
@@ -45,7 +45,7 @@ export const Contact = () => {
 					className='basis-1/2 flex justify-center'
 					initial='hidden'
 					whileInView='visible'
-					viewport={{ once: false, amount: 0.5 }}
+					viewport={{ once: true, amount: 0.5 }}
 					transition={{ duration: 0.5 }}
 					variants={{
 						hidden: { opacity: 0, y: 50 },
@@ -59,7 +59,7 @@ export const Contact = () => {
 					className='basis-1/2 mt-10 md:mt-0'
 					initial='hidden'
 					whileInView='visible'
-					viewport={{ once: false, amount: 0.5 }}
+					viewport={{ once: true, amount: 0.5 }}
 					transition={{ delay: 0.2, duration: 0.5 }}
 					variants={{
 						hidden: { opacity: 0, y: 50 },
@@ -131,5 +131,5 @@ export const Contact = () => {
 				</motion.div>
 			</div>
 		</section>
-	);
-};
+	)
+}

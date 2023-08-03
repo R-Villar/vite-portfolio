@@ -98,6 +98,18 @@ export const Projects = () => {
 								Looking to take your team away on a retreat to enjoy awesome food and take in
 								some sunshine? We have a list of places to do just that.
 							</p>
+							<div className='flex flex-row gap-x-2.5 py-2'>
+								<a
+									href='https://github.com/R-Villar/fitness-app'
+									target='_blank'
+									rel='noreferrer'
+								>
+									<FaGithub title='go to site' size='1.5rem' color='black' />
+								</a>
+								<a>
+									<BiLinkExternal title='go to site' size='1.5rem' color='black' />
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>

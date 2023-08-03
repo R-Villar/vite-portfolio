@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa"
 
 export const SocialMediaIcons = () => {
 	return (
@@ -9,7 +9,7 @@ export const SocialMediaIcons = () => {
 				target='_blank'
 				rel='noreferrer'
 			>
-        <FaLinkedin title="LinkedIn Link" size='2em' />
+				<FaLinkedin title='LinkedIn Link' size='2em' />
 			</a>
 			<a
 				className='hover:opacity-50 transition duration-500'
@@ -17,8 +17,8 @@ export const SocialMediaIcons = () => {
 				target='_blank'
 				rel='noreferrer'
 			>
-        <FaGithub title="Github Link" size='2em' />
+				<FaGithub title='Github Link' size='2em' />
 			</a>
 		</div>
-	);
-};
+	)
+}
