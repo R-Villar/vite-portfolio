@@ -2,7 +2,7 @@ import { LineGradient } from "../components/LineGradient"
 import { useForm } from "react-hook-form"
 import { motion } from "framer-motion"
 
-export const Contact = () => {
+export const Contact = ({ setSelectedPage }) => {
 	const {
 		register,
 		trigger,
@@ -23,6 +23,7 @@ export const Contact = () => {
 				className='flex justify-end w-full'
 				initial='hidden'
 				whileInView='visible'
+				onViewportEnter={() => setSelectedPage("contact")}
 				viewport={{ once: true, amount: 0.5 }}
 				transition={{ duration: 0.5 }}
 				variants={{
