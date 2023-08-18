@@ -18,17 +18,23 @@ export const Landing = ({ setSelectedPage }) => {
 					>
 						<img
 							alt='profile'
+							sizes='2300px'
+							width='2300px'
+							height='3000px'
 							className='transition duration-300 ease-in-out hover:scale-105 z-10 w-full 
                                 max-w-[400px] md:max-w-[600px]'
-							src='assets/Remy.png'
+							src='assets/Remy.webp'
 						/>
 					</div>
 				) : (
 					<img
 						alt='profile'
+						sizes='2300px'
+						width='2300px'
+						height='3000px'
 						className='transition duration-300 ease-in-out hover:scale-105 z-10 w-full
                             max-w-[400px] md:max-w-[600px]'
-						src='assets/Remy.png'
+						src='assets/Remy.webp'
 					/>
 				)}
 			</div>
@@ -58,8 +64,7 @@ export const Landing = ({ setSelectedPage }) => {
 					</p>
 
 					<p className='mt-10 mb-7 text-sm text-center md:text-start'>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem non mauris auctor
-						auctor. Nullam felis elit,
+						Hello, welcome to my portfolio.
 					</p>
 				</motion.div>
 
