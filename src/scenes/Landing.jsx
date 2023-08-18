@@ -40,10 +40,10 @@ export const Landing = ({ setSelectedPage }) => {
 			</div>
 
 			{/* MAIN SECTION */}
-			<div className='z-30 basis-3.5/5 mt-12 md:mt-32'>
+			<div className='md:flex-1 z-30 basis-3.5/5 mt-12 md:mt-32'>
 				{/* HEADINGS */}
 				<motion.div
-					initial='hidden'
+					// initial='hidden'
 					whileInView='visible'
 					viewport={{ once: true, amount: 0.5 }}
 					transition={{ duration: 0.5 }}
@@ -63,8 +63,24 @@ export const Landing = ({ setSelectedPage }) => {
 						</span>
 					</p>
 
-					<p className='mt-10 mb-7 text-sm text-center md:text-start'>
-						Hello, welcome to my portfolio.
+					<p className='mt-10 mb-7 font-small text-center md:text-start'>
+						Hello, welcome to my portfolio. I am a software engineer based in NYC. When I was in
+						high school, my mother bought my siblings and me my first computer. It was a Dell
+						computer that we had to put together. I remember the excitement I felt while putting
+						it together, even though we had no idea what we were doing. Back in the Dominican
+						Republic, we couldn't afford a computer, nor did we know anyone who had one. Thus, the
+						fact that we could now build our own computer excited us for the possibilities that we
+						could explore due to this opportunity. Once the computer was built, I felt immense
+						pride in my accomplishment and realized this was the career path I wanted to pursue.
+						Unfortunately, as I began my college career, I was diagnosed with Crohn`s Disease and
+						unable to pursue my career goal. Once I was healthy and able, I went back to school. A
+						few weeks into the semester, COVID happened. I now faced a new challenge: attending
+						school remotely while also working in the hospital as a nursing assistant. Ultimately,
+						what I learned from this experience was resilience. Since then, I have completed my
+						associates in computer information systems, graduated from the Flatiron software
+						engineering boot camp, and finished a series of stretch assignments. Furthermore, I am
+						passionate about joining a team where we collaborate to build tools that benefit the
+						community.
 					</p>
 				</motion.div>
 
