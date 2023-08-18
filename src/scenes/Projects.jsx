@@ -27,15 +27,10 @@ export const Projects = ({ setSelectedPage }) => {
 						<LineGradient width='w-1/3' />
 					</div>
 				</div>
-
-				<p className='mt-10 mb-10'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem non mauris auctor
-					auctor. Nullam felis elit,
-				</p>
 			</motion.div>
 
 			{/* PROJECTS */}
-			<div>
+			<div className='mt-10'>
 				{/* ROW 1 */}
 				<div className='max-w-md mx-auto bg-project-card rounded-lg overflow-hidden md:max-w-2xl mb-8'>
 					<div className='md:flex'>

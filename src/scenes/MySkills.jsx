@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { FaPython, FaGit, FaHtml5, FaReact, FaCss3Alt, FaBootstrap, FaNode } from "react-icons/fa"
 import { SiJavascript, SiRubyonrails, SiRuby, SiMysql, SiMui, SiMongodb, SiFlask } from "react-icons/si"
 
-export const MySkills = ({setSelectedPage}) => {
+export const MySkills = ({ setSelectedPage }) => {
 	const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
 
 	return (
@@ -98,10 +98,24 @@ export const MySkills = ({setSelectedPage}) => {
 							className='relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
                             before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]'
 						>
-							<img alt='profile' className='z-10' src='assets/skills-image.png' />
+							<img
+								alt='profile'
+								sizes='705px'
+								width='705px'
+								height='261px'
+								className='z-10'
+								src='assets/skills-image.webp'
+							/>
 						</div>
 					) : (
-						<img alt='profile' className='z-10' src='assets/skills-image.png' />
+						<img
+							alt='profile'
+							sizes='705px'
+							width='705px'
+							height='261px'
+							className='z-10'
+							src='assets/skills-image.webp'
+						/>
 					)}
 				</div>
 			</div>

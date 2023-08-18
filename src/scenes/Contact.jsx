@@ -53,7 +53,13 @@ export const Contact = ({ setSelectedPage }) => {
 						visible: { opacity: 1, y: 0 },
 					}}
 				>
-					<img src='../assets/contact-image.jpeg' alt='contact' />
+					<img
+						src='../assets/contact-image.webp'
+						alt='contact'
+						sizes='591px'
+						width='591px'
+						height='442 px'
+					/>
 				</motion.div>
 
 				<motion.div
