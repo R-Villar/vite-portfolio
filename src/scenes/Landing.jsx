@@ -63,7 +63,7 @@ export const Landing = ({ setSelectedPage }) => {
 						</span>
 					</p>
 
-					<p className='mt-10 mb-7 font-small text-center md:text-start'>
+					<p className='mt-10 mb-7 text-sm text-center md:text-start'>
 						Hello, welcome to my portfolio. I am a software engineer based in NYC. When I was in
 						high school, my mother bought my siblings and me my first computer. It was a Dell
 						computer that we had to put together. I remember the excitement I felt while putting
