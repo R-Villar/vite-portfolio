@@ -37,6 +37,47 @@ export const Projects = ({ setSelectedPage }) => {
 						<div className='md:shrink-0'>
 							<img
 								className='h-48 w-full object-cover md:h-full md:w-48'
+								src='../assets/shirt-app.webp'
+								alt='Modern building architecture'
+							/>
+						</div>
+						<div className='p-8'>
+							<div className='uppercase tracking-wide text-sm text-indigo-500 font-semibold'>
+								Customize Shirt
+							</div>
+							<p className='mt-2 text-slate-500'>
+								A Fullstack web application using OpenAI to generate any kind of image to
+								customize the shirt to your liking, you also have a color picker to change the
+								color of the shirt. The outcome are limitless.
+							</p>
+							<p className='block mt-1 text-md leading-tight font-medium text-black'>
+								Express.js, Node.js, Three.js, React, JavaScript, TailwindCSS, OpenAI
+							</p>
+							<div className='flex flex-row gap-x-2.5 py-2'>
+								<a
+									href='https://github.com/R-Villar/customize'
+									target='_blank'
+									rel='noreferrer'
+								>
+									<FaGithub title='go to site' size='1.5rem' color='black' />
+								</a>
+								<a
+									href='https://shirt-app-3byc.onrender.com/'
+									target='_blank'
+									rel='noreferrer'
+								>
+									<BiLinkExternal title='go to site' size='1.5rem' color='black' />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				{/* ROW 2 */}
+				<div className='max-w-md mx-auto bg-project-card rounded-lg overflow-hidden md:max-w-2xl mb-8'>
+					<div className='md:flex'>
+						<div className='md:shrink-0'>
+							<img
+								className='h-48 w-full object-cover md:h-full md:w-48'
 								src='../assets/technotes.webp'
 								alt='Modern building architecture'
 							/>
@@ -54,7 +95,7 @@ export const Projects = ({ setSelectedPage }) => {
 								delete them.
 							</p>
 							<p className='block mt-1 text-md leading-tight font-medium text-black'>
-								MongoDB, Express.js, Node.js, React, Redux
+								MongoDB, Express.js, Node.js, React, Redux, JavaScript
 							</p>
 							<div className='flex flex-row gap-x-2.5 py-2'>
 								<a
@@ -71,7 +112,7 @@ export const Projects = ({ setSelectedPage }) => {
 						</div>
 					</div>
 				</div>
-				{/* ROW 2 */}
+				{/* ROW 3 */}
 				<div className='max-w-md mx-auto bg-project-card rounded-lg shadow-md overflow-hidden md:max-w-2xl'>
 					<div className='md:flex'>
 						<div className='md:shrink-0'>
