@@ -25,12 +25,12 @@ export const DotGroup = ({ selectedPage, setSelectedPage }) => {
                 w-3 h-3 rounded-full`}
 				onClick={() => setSelectedPage("projects")}
 			/>
-			<AnchorLink
+			{/* <AnchorLink
 				href='#contact'
 				className={`${selectedPage === "contact" ? selectedStyles : "bg-dark-grey"} 
                 w-3 h-3 rounded-full`}
 				onClick={() => setSelectedPage("contact")}
-			/>
+			/> */}
 		</div>
 	)
 }
