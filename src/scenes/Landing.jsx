@@ -1,9 +1,8 @@
 import { SocialMediaIcons } from "../components/SocialMediaIcons"
 import { useMediaQuery } from "../hooks/useMediaQuery"
 import { motion } from "framer-motion"
-import AnchorLink from "react-anchor-link-smooth-scroll"
 
-export const Landing = ({ setSelectedPage }) => {
+export const Landing = () => {
 	const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
 
 	return (
@@ -43,7 +42,6 @@ export const Landing = ({ setSelectedPage }) => {
 			<div className='md:flex-1 z-30 basis-3.5/5 mt-12 md:mt-32'>
 				{/* HEADINGS */}
 				<motion.div
-					// initial='hidden'
 					whileInView='visible'
 					viewport={{ once: true, amount: 0.5 }}
 					transition={{ duration: 0.5 }}
@@ -96,14 +94,15 @@ export const Landing = ({ setSelectedPage }) => {
 						visible: { opacity: 1, x: 0 },
 					}}
 				>
-					<AnchorLink
+					<a
 						className='bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
                             hover:bg-blue hover:text-white transition duration-500'
-						onClick={() => setSelectedPage("contact")}
-						href='#contact'
+						href='mailto:rembertovillar@gmail.com'
+						target='_blank'
+						rel='noreferrer'
 					>
 						Contact Me
-					</AnchorLink>
+					</a>
 					<a
 						className='rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5'
 						href='./assets/Remberto_Villar_Resume.pdf'
