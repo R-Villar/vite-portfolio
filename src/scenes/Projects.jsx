@@ -31,7 +31,40 @@ export const Projects = ({ setSelectedPage }) => {
 
 			{/* PROJECTS */}
 			<div className='mt-10'>
-				{/* ROW 1 */}
+				{/* Project script */}
+				<div className='max-w-md mx-auto bg-project-card rounded-lg overflow-hidden md:max-w-2xl mb-8'>
+					<div className='md:flex'>
+						<div className='md:shrink-0'>
+							<img
+								className='h-48 w-full object-cover md:h-full md:w-48'
+								src='../assets/organize-script.webp'
+								alt='Modern building architecture'
+							/>
+						</div>
+						<div className='p-8'>
+							<div className='uppercase tracking-wide text-sm text-indigo-500 font-semibold'>
+								Organize Files
+							</div>
+							<p className='mt-2 text-slate-500'>
+								This is a simple script to organize files in a directory. It will create
+								folders for each file type and move the files to their respective folders. I
+								came up with this script because I wanted a simple way to organize my files.
+							</p>
+							<p className='block mt-1 text-md leading-tight font-medium text-black'>Python</p>
+							<div className='flex flex-row gap-x-2.5 py-2'>
+								<a
+									href='https://github.com/R-Villar/organize-files'
+									target='_blank'
+									rel='noreferrer'
+								>
+									<FaGithub title='go to site' size='1.5rem' color='black' />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{/* Project shirt */}
 				<div className='max-w-md mx-auto bg-project-card rounded-lg overflow-hidden md:max-w-2xl mb-8'>
 					<div className='md:flex'>
 						<div className='md:shrink-0'>
@@ -72,7 +105,7 @@ export const Projects = ({ setSelectedPage }) => {
 						</div>
 					</div>
 				</div>
-				{/* ROW 2 */}
+				{/* Project technotes */}
 				<div className='max-w-md mx-auto bg-project-card rounded-lg overflow-hidden md:max-w-2xl mb-8'>
 					<div className='md:flex'>
 						<div className='md:shrink-0'>
@@ -112,7 +145,7 @@ export const Projects = ({ setSelectedPage }) => {
 						</div>
 					</div>
 				</div>
-				{/* ROW 3 */}
+				{/* Project evogym */}
 				<div className='max-w-md mx-auto bg-project-card rounded-lg shadow-md overflow-hidden md:max-w-2xl'>
 					<div className='md:flex'>
 						<div className='md:shrink-0'>
