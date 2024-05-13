@@ -1,6 +1,7 @@
 import { SocialMediaIcons } from "../components/SocialMediaIcons"
 
 export const Footer = () => {
+	let currentYear = new Date().getFullYear()
 	return (
 		<footer className='h-64 bg-red pt-10'>
 			<div className='w-5/6 mx-auto'>
@@ -8,7 +9,9 @@ export const Footer = () => {
 
 				<div className='md:flex justify-center md:justify-between text-center'>
 					<p className='font-playfair font-semibold text-2xl text-yellow'>Remberto Villar</p>
-					<p className='font-playfair text-md text-yellow'>©️2023 Villar. All Rights Reserved.</p>
+					<p className='font-playfair text-md text-yellow'>
+						©️{currentYear} Villar. All Rights Reserved.
+					</p>
 				</div>
 			</div>
 		</footer>
