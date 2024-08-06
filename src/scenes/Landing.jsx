@@ -62,23 +62,18 @@ export const Landing = () => {
 					</p>
 
 					<p className='mt-10 mb-7 text-sm text-center md:text-start'>
-						Hello, welcome to my portfolio. I am a software engineer based in NYC. When I was in
-						high school, my mother bought my siblings and me my first computer. It was a Dell
-						computer that we had to put together. I remember the excitement I felt while putting
-						it together, even though we had no idea what we were doing. Back in the Dominican
-						Republic, we couldn't afford a computer, nor did we know anyone who had one. Thus, the
-						fact that we could now build our own computer excited us for the possibilities that we
-						could explore due to this opportunity. Once the computer was built, I felt immense
-						pride in my accomplishment and realized this was the career path I wanted to pursue.
-						Unfortunately, as I began my college career, I was diagnosed with Crohn`s Disease and
-						unable to pursue my career goal. Once I was healthy and able, I went back to school. A
-						few weeks into the semester, COVID happened. I now faced a new challenge: attending
-						school remotely while also working in the hospital as a nursing assistant. Ultimately,
-						what I learned from this experience was resilience. Since then, I have completed my
-						associates in computer information systems, graduated from the Flatiron software
-						engineering boot camp, and finished a series of stretch assignments. Furthermore, I am
-						passionate about joining a team where we collaborate to build tools that benefit the
-						community.
+						Hello, and welcome to my portfolio! I'm a NYC-based software engineer with a versatile
+						skill set, proficient in languages such as Python, JavaScript, and Ruby. I enjoy
+						leveraging my experience with frameworks and libraries like React, Node.js, and Ruby
+						on Rails to build everything from responsive web applications to efficient backend
+						systems. I'm passionate about using my skills to create technology that matters. My
+						journey began with the thrill of building my first computer as a teenager – a moment
+						that sparked a lifelong fascination with technology. Despite facing challenges along
+						the way, including navigating the COVID-19 pandemic and going to school full-time
+						while working overnight, my resilience and determination only grew stronger. I'm a
+						proud graduate of Flatiron School and hold an associate's degree in Computer
+						Information Systems. I'm eager to collaborate with a team to create innovative
+						solutions that benefit the community.
 					</p>
 				</motion.div>
 
