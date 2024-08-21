@@ -32,6 +32,7 @@ module.exports = {
 			xs: "480px",
 			sm: "768px",
 			md: "1060px",
+			standalone: { raw: "(display-mode: standalone)" },
 		},
 	},
 	plugins: [],
