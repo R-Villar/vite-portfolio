@@ -1,0 +1,12 @@
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Disallow any private or sensitive paths (adjust as needed)
+Disallow: /assets/Remberto_Villar_Resume.pdf
+
+# Crawl-delay for bots that respect it (optional)
+# Crawl-delay: 5
+
+# Point to your sitemap (adjust path if needed)
+Sitemap: https://sandralindsayfoundation.org/sitemap.xml
